@@ -1,0 +1,29 @@
+Individual Roles (10)
+====================
++SOLanio [58]
++SALerio [104]
++GRAtiano [132]
++BASSiano [252]
++ANTonio [172]
++LORenzo [92]
+*+SHYlock [284]
+*+JESsica [65]
++NERissa [31]
++PORtia [364]
+
+Doubled (or more) Roles (3)
+===========================
++Balthazar [1]
++DUKE [53]
+*ARragon, Prince of [66]
+----------------------
++LAUNcelot [25]
+*TUBal [8]
+----------------------
++SERVant
+*MORocco, Prince of [103]
++STEPHano [11]
+
+===============================
++ = masked
+* = not masked

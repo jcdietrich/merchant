@@ -1,0 +1,3 @@
+xmlstarlet tr moby_latex.xsl merchant_of_venice_ps_v3.xml > out.tex
+xelatex out.tex
+xelatex out.tex

@@ -1,0 +1,123 @@
+* {
+	display:block;
+}
+
+PLAY { 
+	margin: 4ex;
+}
+
+title, scenetitle, acttitle {
+	text-align: center;
+	font-size: 2.5ex;
+	page-break-after: avoid;
+}
+
+persona {
+	font-size: 1.5ex;
+	margin-bottom:.5ex;
+}
+
+act { 
+	page-break-before: always;
+	counter-increment: act;
+	counter-reset: scene;
+}
+
+scene { 
+	page-break-after: always;
+	counter-reset: line;
+	counter-increment: scene;
+}
+
+scenelocation, scenepersonae, playwright, titleshort { 
+	 text-align: center;  
+	 font-style:italic;
+	 font-size:2ex
+}
+
+scenepersonae {
+	 font-size:1.5ex
+}
+
+stagedir{
+	 margin: 1.5ex 0 1.5ex 0;
+	 text-align: center;  
+	 font-style:italic;
+	 font-size:1.5ex
+}
+
+
+
+
+speech { 
+	margin-bottom: 1ex;
+	page-break-inside:avoid;
+}
+
+speaker {
+	margin-top:2ex;
+	font-weight:bold;
+	font-size:1.5ex;
+	color:#666;
+}
+
+line {
+	font-size:2ex;
+	font-family:"Times New Roman", Times, serif;
+}
+
+line[offset] { 
+	margin-left: 7ex;
+}
+line[offset]:before{
+	content:"";
+	counter-increment: line -0;
+}
+line[class='reading'] { 
+	width:50%;
+	font-style:italic;
+	padding: 0 0 3ex 3ex;
+}
+
+line:before{
+	content: counter(line);
+	counter-increment: line;
+	padding-right: 5ex;
+	font-size: 1ex; 
+	vertical-align: super?
+}
+
+line cut, line CUT {
+	display:inline;
+}
+
+cut, CUT {
+	text-decoration:line-through;
+}
+
+
+annotate:after, note:before {
+	content:'†';
+	vertical-align:
+	super;font-size:1ex;
+}
+
+annotate anno, note {
+	float:right;
+	font-size:1ex;
+	width:40ex;
+	clear:both;
+	text-align:right;
+	font-family:sans;
+}
+
+del { font-size: 1ex;
+	displayx:inline;
+	display:none;
+	text-decoration: line-through; }
+
+@page {
+  size: 8.5in 11in;
+  margin: 5%;
+  @top-center {content: "Macbeth: Act " counter(act) " Scene " counter(scene); };
+}

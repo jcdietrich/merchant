@@ -78,20 +78,19 @@ line[class='reading'] {
 	font-style:italic;
 	padding: 0 0 3ex 3ex;
 }
-
 line:before{
+        counter-increment: line;
 	content: counter(line);
-	counter-increment: line;
 	padding-right: 5ex;
 	font-size: 1ex; 
 	vertical-align: super?
 }
-
 line cut, line CUT {
-	display:inline;
+	display:none;
 }
 
 cut, CUT {
+        display:none;
 	text-decoration:line-through;
 }
 
